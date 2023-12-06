@@ -1,0 +1,80 @@
+/* tips.component.css */
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: antiquewhite;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 80px; /* Adjust the value to increase or decrease the logo size */
+}
+
+.login-btn {
+  background-color: hotpink;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: white;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 20px; /* Adjust spacing between tip containers */
+  margin-top: 20px;
+  background: white;
+  width: 85%;
+}
+
+.tip-container {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  height: 500px;
+}
+
+.tip-container:hover {
+  background-color: #ddd; /* Hover effect */
+}
+
+.tip-container h2 {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: antiquewhite;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Add more styles as needed */

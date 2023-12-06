@@ -1,1 +1,33 @@
-<p>tips works!</p>
+<!-- tips.component.html -->
+
+<header>
+  <img src="assets/logo.jpg" alt="Your App Logo">
+  <a routerLink="/login" class="login-btn">Login</a>
+</header>
+
+<section class="center-container">
+  <h1>Tips</h1>
+
+  <div class="tips-grid">
+    <div class="tip-container" (click)="navigateTo('tip1')">
+      <h2>Tip 1</h2>
+      <p>Description for Tip 1 goes here...</p>
+    </div>
+
+    <div class="tip-container" (click)="navigateTo('tip2')">
+      <h2>Tip 2</h2>
+      <p>Description for Tip 2 goes here...</p>
+    </div>
+
+    <div class="tip-container" (click)="navigateTo('tip3')">
+      <h2>Tip 3</h2>
+      <p>Description for Tip 3 goes here...</p>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <div>Contact: your.email@example.com</div>
+  <div>Approved by: Your Organization</div>
+</footer>

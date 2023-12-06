@@ -7,7 +7,7 @@
 }
 
 header {
-  background-color: #333;
+  background-color: antiquewhite;
   color: #fff;
   padding: 10px;
   display: flex;
@@ -19,8 +19,8 @@ header img {
   height: 80px; /* Adjust the value to increase or decrease the logo size */
 }
 
-.login-btn {
-  background-color: #4CAF50;
+.login-btn, .search-btn, .add-btn {
+  background-color: hotpink;
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
@@ -31,11 +31,28 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70%;
+  background: white;
+  margin: 50px auto;
+}
+
+.search-add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; /* Take up half of the screen */
+  margin: auto;
 }
 
 .search-bar {
   margin-top: 20px;
   text-align: center;
+}
+.search-bar input {
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .add-button {
@@ -52,7 +69,8 @@ header img {
 .symptom-container {
   display: flex;
   justify-content: space-between;
-  width: 50%; /* Adjust the width of the symptom container */
+  width: 600px; /* Adjust the width of the symptom container */
+  height: 500px; /* Adjust the height of the symptom container */
   background-color: #f4f4f4; /* Light gray background */
   padding: 20px;
   border-radius: 10px;
@@ -62,7 +80,8 @@ header img {
   background-color: lightgray;
   padding: 10px;
   border-radius: 20px;
-  margin-right: 10px; /* Adjust spacing between symptoms on the x-axis */
+  margin-right: 20px; /* Adjust spacing between symptoms on the x-axis */
+  margin-bottom: 20px; /* Adjust spacing between symptoms on the y-axis */
   cursor: pointer;
 }
 
@@ -88,7 +107,6 @@ header img {
 .female-symptoms .bubble {
   background-color: #ff69b4; /* Hot Pink */
 }
-
 footer {
   background-color: #333;
   color: #fff;

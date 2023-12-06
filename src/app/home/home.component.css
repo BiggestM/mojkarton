@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: antiquewhite;
   color: #fff;
   padding: 10px;
   display: flex;
@@ -15,7 +15,7 @@ header {
 }
 
 header img {
-  height: 60px; /* Set your logo height */
+  height: 80px; /* Set your logo height */
 }
 
 .login-btn {
@@ -28,6 +28,7 @@ header img {
 
 .app-description {
   padding: 20px;
+  height: 300px;
 }
 
 .grid-container {
@@ -43,11 +44,12 @@ header img {
   background-color: #f0f0f0;
   border-radius: 8px;
   cursor: pointer;
+  height: 200px;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: antiquewhite;
+  color: black;
   padding: 10px;
   display: flex;
   justify-content: space-between;

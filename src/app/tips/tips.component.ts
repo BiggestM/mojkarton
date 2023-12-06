@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TipsComponent {
 
+  navigateTo(tipId: string) {
+    // Implement navigation logic to open a new page for the selected tip
+    console.log(`Navigating to tip: ${tipId}`);
+  }
+
 }

@@ -1,1 +1,52 @@
-<p>support works!</p>
+<!-- support.component.html -->
+
+<header>
+  <img src="assets/logo.jpg" alt="Your App Logo">
+  <a routerLink="/login" class="login-btn">Login</a>
+</header>
+
+<section class="center-container">
+  <h1>Support</h1>
+
+  <!-- Video Grid -->
+  <div class="video-grid">
+    <div class="video-container" (click)="navigateTo('video1')">
+      <h2>Video 1</h2>
+      <!-- Placeholder for video player or thumbnail -->
+    </div>
+
+    <div class="video-container" (click)="navigateTo('video2')">
+      <h2>Video 2</h2>
+      <!-- Placeholder for video player or thumbnail -->
+    </div>
+
+    <div class="video-container" (click)="navigateTo('video3')">
+      <h2>Video 3</h2>
+      <!-- Placeholder for video player or thumbnail -->
+    </div>
+  </div>
+
+  <!-- Experience Grid -->
+  <div class="experience-grid">
+    <div class="experience-bubble">
+      <h3>Experience 1</h3>
+      <p>Description of the experience goes here...</p>
+    </div>
+
+    <div class="experience-bubble">
+      <h3>Experience 2</h3>
+      <p>Description of the experience goes here...</p>
+    </div>
+
+    <div class="experience-bubble">
+      <h3>Experience 3</h3>
+      <p>Description of the experience goes here...</p>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <div>Contact: your.email@example.com</div>
+  <div>Approved by: Your Organization</div>
+</footer>
