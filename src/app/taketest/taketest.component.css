@@ -1,0 +1,104 @@
+/* test.component.css */
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 80px; /* Adjust the value to increase or decrease the logo size */
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.symptoms-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.symptom-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%; /* Adjust the width of the symptom container */
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bubble {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 10px; /* Adjust spacing between symptoms on the x-axis */
+  cursor: pointer;
+}
+
+.bubble-title {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkmark {
+  color: green;
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+
+.selected {
+  background-color: green;
+}
+
+.male-symptoms .bubble {
+  background-color: #4285f4; /* Arden Blue */
+}
+
+.female-symptoms .bubble {
+  background-color: #ff69b4; /* Hot Pink */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Add more styles as needed */

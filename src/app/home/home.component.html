@@ -1,1 +1,30 @@
-<p>home works!</p>
+<!-- app.component.html -->
+
+<header>
+  <img src="assets/logo.jpg" alt="Your App Logo">
+  <a routerLink="/login" class="login-btn">Login</a>
+</header>
+
+<section class="app-description">
+  <p>Your App Description Goes Here.</p>
+</section>
+
+<div class="grid-container">
+  <div class="grid-item" (click)="navigateTo('tips')">
+    <h2>Tips</h2>
+    <p>Click for helpful tips.</p>
+  </div>
+  <div class="grid-item" (click)="navigateTo('test')">
+    <h2>Test</h2>
+    <p>Click to take a test.</p>
+  </div>
+  <div class="grid-item" (click)="navigateTo('support')">
+    <h2>Support</h2>
+    <p>Click for support.</p>
+  </div>
+</div>
+
+<footer>
+  <div>Contact: your.email@example.com</div>
+  <div>Approved by: Your Organization</div>
+</footer>

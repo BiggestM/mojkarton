@@ -1,1 +1,61 @@
-<p>taketest works!</p>
+<!-- test.component.html -->
+
+<header>
+  <img src="assets/logo.jpg" alt="Your App Logo">
+  <a routerLink="/login" class="login-btn">Login</a>
+</header>
+
+<section class="center-container">
+  <section class="search-bar">
+    <input type="text" placeholder="Search...">
+    <button>Search</button>
+  </section>
+
+  <section class="add-button">
+    <button onclick="addSymptom()">Add Symptom</button>
+  </section>
+
+  <section class="symptoms-wrapper">
+    <section class="symptom-container">
+      <div class="male-symptoms">
+        <div class="bubble" onclick="toggleSelection(this, 'male')">
+          <span class="bubble-title">Male Symptom 1</span>
+          <span class="checkmark"></span>
+        </div>
+        <div class="bubble" onclick="toggleSelection(this, 'male')">
+          <span class="bubble-title">Male Symptom 2</span>
+          <span class="checkmark"></span>
+        </div>
+        <!-- Add more male symptoms as needed -->
+      </div>
+
+      <div class="female-symptoms">
+        <div class="bubble" onclick="toggleSelection(this, 'female')">
+          <span class="bubble-title">Female Symptom 1</span>
+          <span class="checkmark"></span>
+        </div>
+        <div class="bubble" onclick="toggleSelection(this, 'female')">
+          <span class="bubble-title">Female Symptom 2</span>
+          <span class="checkmark"></span>
+        </div>
+        <!-- Add more female symptoms as needed -->
+      </div>
+    </section>
+  </section>
+</section>
+
+<footer>
+  <div>Contact: your.email@example.com</div>
+  <div>Approved by: Your Organization</div>
+</footer>
+
+<script>
+  function addSymptom() {
+    // Placeholder for future logic to add a symptom
+    console.log('Add Symptom Clicked');
+  }
+
+  function toggleSelection(element, gender) {
+    element.classList.toggle('selected');
+  }
+</script>
