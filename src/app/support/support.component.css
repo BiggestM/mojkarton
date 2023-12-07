@@ -11,7 +11,7 @@
 }
 
 header {
-  background-color: antiquewhite;
+  background-color: #fcfafa;
   color: #fff;
   padding: 10px;
   display: flex;
@@ -24,7 +24,7 @@ header img {
 }
 
 .login-btn {
-  background-color: hotpink;
+  background-color: #ff7795;
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
@@ -75,16 +75,11 @@ header img {
   margin-bottom: 10px;
 }
 
-.footer {
-  background-color: #333;
-  color: #fff;
+footer {
+  background-color: #fcfafa;
+  color: #FD043B;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  text-align: center;
 }
 
 /* Add more styles as needed */

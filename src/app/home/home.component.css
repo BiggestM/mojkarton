@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: antiquewhite;
+  background-color: #fcfafa;
   color: #fff;
   padding: 10px;
   display: flex;
@@ -19,7 +19,7 @@ header img {
 }
 
 .login-btn {
-  background-color: hotpink;
+  background-color: #ff7795;
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
@@ -27,8 +27,36 @@ header img {
 }
 
 .app-description {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.description-bg {
+  background-image: url('/assets/background1.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(5px);
+  z-index: -1;
+}
+.description-content {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
   padding: 20px;
-  height: 300px;
+  color: black;
+  text-align: right;
+  max-width: 40%;
+}
+.description-content p {
+  text-align: center;
+  font-size: 20px; /* Adjust the font size as needed */
+  line-height: 2; /* Adjust the line height for better readability */
 }
 
 .grid-container {
@@ -39,24 +67,50 @@ header img {
 }
 
 .grid-item {
+  position: relative;
   padding: 20px;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 119, 149, 0.32);
   border-radius: 8px;
   cursor: pointer;
   height: 200px;
+  overflow: hidden;
+}
+/*.grid-item h2,*/
+/*.grid-item p {*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*  color: #fff; !* Text color *!*/
+/*}*/
+.grid-item.tips {
+  background-image: url('/assets/Picture2.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
+.grid-item.test {
+  background-image: url('/assets/Picture1.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.grid-item.support {
+  background-image: url('/assets/Picture3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 footer {
-  background-color: antiquewhite;
-  color: black;
+  background-color: #fcfafa;
+  color: #FD043B;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   /* Add responsive styles if needed */

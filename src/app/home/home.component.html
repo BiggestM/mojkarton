@@ -1,30 +1,43 @@
 <!-- app.component.html -->
 
 <header>
-  <img src="assets/logo.jpg" alt="Your App Logo">
+  <img src="assets/logo.png" alt="Your App Logo">
   <a routerLink="/login" class="login-btn">Login</a>
 </header>
 
 <section class="app-description">
-  <p>Your App Description Goes Here.</p>
+  <!-- Background image for the description section -->
+  <div class="description-bg"></div>
+
+  <!-- Content inside the description section -->
+  <div class="description-content">
+    <p>Introducing "mojKarton" — the game-changing app revolutionizing breast cancer awareness.
+      Picture this: a dynamic platform meticulously crafted to provide women with not just information
+      but a personalized journey towards better breast health. mojKarton is your go-to resource,
+      seamlessly blending lifestyle promotion, in-depth cancer insights, and cutting-edge self-assessment tools.
+      But we're not stopping there. We're pioneering a supportive community, a virtual haven where individuals unite,
+      share stories, and find strength. Think of mojKarton as your digital ally in the fight against breast cancer,
+      a one-stop solution poised to disrupt the status quo. We're not just an app; we're a movement,
+      a commitment to early detection, mental health, and empowerment. Join us as we rewrite the narrative
+      on breast cancer awareness — mojKarton, where knowledge meets resilience. </p>
+  </div>
 </section>
 
 <div class="grid-container">
-  <div class="grid-item" (click)="navigateTo('tips')">
+  <div class="grid-item tips" (click)="navigateTo('tips')">
     <h2>Tips</h2>
     <p>Click for helpful tips.</p>
   </div>
-  <div class="grid-item" (click)="navigateTo('test')">
+  <div class="grid-item test" (click)="navigateTo('test')">
     <h2>Test</h2>
     <p>Click to take a test.</p>
   </div>
-  <div class="grid-item" (click)="navigateTo('support')">
+  <div class="grid-item support" (click)="navigateTo('support')">
     <h2>Support</h2>
     <p>Click for support.</p>
   </div>
 </div>
 
 <footer>
-  <div>Contact: your.email@example.com</div>
-  <div>Approved by: Your Organization</div>
+  <div>Sarajevo School of Science and Technlogy 2023 &copy;</div>
 </footer>
