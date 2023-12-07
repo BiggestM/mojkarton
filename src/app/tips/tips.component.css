@@ -35,14 +35,31 @@ header img {
   width: 100%;
   background: white;
   margin: 50px auto;
-  padding: 20px;
+}
+.title-section {
+  position: relative;
+  background-image: url('/assets/Picture2.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 119, 149, 0.32);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+h1 {
+  font-size: 40px;
+  color: #FF7795;
+  font-family: 'Lemon', sans-serif;
 }
 
 .tips-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns per row */
   gap: 20px; /* Adjust spacing between tip containers */
-  margin-top: 20px;
+  margin-top: 0px;
   background: white;
   width: 85%;
 }
@@ -50,20 +67,49 @@ header img {
 .tip-container {
   box-sizing: border-box;
   padding: 20px;
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: rgba(255, 119, 149, 0.32);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition effect */
   height: 500px;
 }
+.tip-container p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1E395B;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
 
 .tip-container:hover {
-  background-color: #ddd; /* Hover effect */
+  background-color: pink;
 }
 
 .tip-container h2 {
   margin-bottom: 10px;
+  font-size: 30px;
+  color: #FF7795;
+  font-family: 'Lemon', sans-serif;
+
 }
+.tip-container.diet {
+  background-image: url('/assets/food.png');
+  background-size: contain;
+  background-position: bottom;
+}
+.tip-container.pactivity {
+  background-image: url('/assets/exercise.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.tip-container.checkup {
+  background-image: url('/assets/checkup.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 
 footer {
   background-color: #fcfafa;

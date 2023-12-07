@@ -1,7 +1,9 @@
 <!-- app.component.html -->
 
 <header>
-  <img src="assets/logo.png" alt="Your App Logo">
+  <a routerLink="/">
+    <img src="assets/logo.png" alt="Your App Logo">
+  </a>
   <a routerLink="/login" class="login-btn">Login</a>
 </header>
 
@@ -11,30 +13,32 @@
 
   <!-- Content inside the description section -->
   <div class="description-content">
-    <p>Introducing "mojKarton" — the game-changing app revolutionizing breast cancer awareness.
-      Picture this: a dynamic platform meticulously crafted to provide women with not just information
-      but a personalized journey towards better breast health. mojKarton is your go-to resource,
-      seamlessly blending lifestyle promotion, in-depth cancer insights, and cutting-edge self-assessment tools.
-      But we're not stopping there. We're pioneering a supportive community, a virtual haven where individuals unite,
-      share stories, and find strength. Think of mojKarton as your digital ally in the fight against breast cancer,
-      a one-stop solution poised to disrupt the status quo. We're not just an app; we're a movement,
-      a commitment to early detection, mental health, and empowerment. Join us as we rewrite the narrative
-      on breast cancer awareness — mojKarton, where knowledge meets resilience. </p>
+    <p>Predstavljamo "mojKarton" — revolucionarnu aplikaciju koja mijenja igru
+      i transformiše svijest o raku dojke. Zamislite ovo: dinamična platforma
+      pažljivo osmišljena kako bi ženama pružila ne samo informacije, već personalizirano
+      putovanje prema boljem zdravlju dojki. mojKarton je vaša glavna resursna baza koja
+      besprijekorno kombinuje promociju zdravog načina života, dubinske uvide u rak i cutting-edge
+      alate za samoprocjenu. Ali, tu ne stajemo. Pioniramo podržavajuću zajednicu, virtualni utočište
+      gdje pojedinci zajedno dijele priče i pronalaze snagu. Zamislite mojKarton kao vašeg digitalnog
+      saveznika u borbi protiv raka dojke, sveobuhvatno rješenje koje će poremetiti ustaljeni poredak
+      stvari. Nismo samo aplikacija; mi smo pokret, posvećenost ranoj detekciji, mentalnom zdravlju i
+      osnaživanju. Pridružite nam se dok mijenjamo priču o svijesti o raku dojke — mojKarton, gdje se
+      znanje susreće s otpornošću. </p>
   </div>
 </section>
 
 <div class="grid-container">
   <div class="grid-item tips" (click)="navigateTo('tips')">
-    <h2>Tips</h2>
-    <p>Click for helpful tips.</p>
+    <h2>Savjeti za zdrav život</h2>
+<!--    <p>Click for helpful tips.</p>-->
   </div>
   <div class="grid-item test" (click)="navigateTo('test')">
-    <h2>Test</h2>
-    <p>Click to take a test.</p>
+    <h2>Simptomi i Samopregled</h2>
+<!--    <p>Click to take a test.</p>-->
   </div>
   <div class="grid-item support" (click)="navigateTo('support')">
-    <h2>Support</h2>
-    <p>Click for support.</p>
+    <h2>Zajednica i Podrška</h2>
+<!--    <p>Click for support.</p>-->
   </div>
 </div>
 

@@ -1,27 +1,58 @@
 <!-- tips.component.html -->
 
 <header>
-  <img src="assets/logo.png" alt="Your App Logo">
+  <a routerLink="">
+    <img src="assets/logo.png" alt="Your App Logo">
+  </a>
   <a routerLink="/login" class="login-btn">Login</a>
 </header>
 
+<section class="title-section">
+  <h1>Savjeti za zdrav život</h1>
+</section>
+
+
 <section class="center-container">
-  <h1>Tips</h1>
+
 
   <div class="tips-grid">
-    <div class="tip-container" (click)="navigateTo('tip1')">
-      <h2>Tip 1</h2>
-      <p>Description for Tip 1 goes here...</p>
+    <div class="tip-container pactivity" (click)="navigateTo('tip1')">
+      <h2>Fizička aktivnost</h2>
+      <p>Važno je redovito uključivati fizičke aktivnosti u svakodnevni život kako biste
+        održali zdravlje dojki i smanjili rizik od raka dojke. Aktivnosti poput šetnji,
+        trčanja, plivanja i vježbi snage mogu poboljšati cirkulaciju krvi, održavati zdravu
+        tjelesnu težinu i poticati rad imunološkog sustava. Preporučuje se najmanje 150 minuta
+        umjerene tjelesne aktivnosti tjedno ili 75 minuta intenzivne aktivnosti uz dodatak vježbi
+        jačanja mišića dva puta tjedno. Održavanje aktivan način života ne samo da pomaže u očuvanju
+        općeg zdravlja, već i doprinosi prevenciji različitih zdravstvenih problema, uključujući rak dojke.
+        Važno je prilagoditi tjelesnu aktivnost vlastitim mogućnostima i uživati u raznolikosti pokreta
+        kako bi održali zdrav i sretan život.</p>
     </div>
 
-    <div class="tip-container" (click)="navigateTo('tip2')">
-      <h2>Tip 2</h2>
-      <p>Description for Tip 2 goes here...</p>
+    <div class="tip-container checkup" (click)="navigateTo('tip2')">
+      <h2>Redovni pregledi</h2>
+      <p>Redovni pregledi su od izuzetne važnosti za očuvanje zdravlja jer omogućuju
+        rano otkrivanje potencijalnih zdravstvenih problema, uključujući i rizike vezane
+        za rak dojke. Periodični medicinski pregledi pružaju priliku za ranu dijagnozu i
+        interveniranje prije nego što se simptomi razviju ili prije nego što bolest postane
+        teža za liječenje. Kod raka dojke, redoviti mamografski pregledi i samopregledi mogu
+        pomoći u identifikaciji promjena u dojkama koje bi mogle ukazivati na mogući problem.
+        Rano otkrivanje omogućuje bržu i učinkovitiju terapiju, često s boljim ishodom. Stoga,
+        redoviti pregledi igraju ključnu ulogu u prevenciji i ranoj detekciji različitih bolesti,
+        pridonoseći očuvanju općeg zdravlja i kvalitete života. Važno je razumjeti da preventivna
+        skrb igra ključnu ulogu u brizi o vlastitom zdravlju i osigurava dugoročno dobrostanje.</p>
     </div>
 
-    <div class="tip-container" (click)="navigateTo('tip3')">
-      <h2>Tip 3</h2>
-      <p>Description for Tip 3 goes here...</p>
+    <div class="tip-container diet" (click)="navigateTo('tip3')">
+      <h2>Dijeta</h2>
+      <p>Za očuvanje zdravlja dojki i smanjenje rizika od raka dojke preporučuje se raznovrsna
+        i uravnotežena ishrana koja uključuje voće, povrće, cjelovite žitarice, nemasne
+        izvore bjelančevina, zdrave masti, nemasne mliječne proizvode ili zamjene, te ograničavanje
+        konzumacije crvenog mesa i prerađenih namirnica. Također, važno je smanjiti unos alkohola,
+        konzumirati dovoljno vode, te razmotriti dodatak zelenog čaja koji je bogat antioksidansima.
+        Individualni odabir hrane je jedinstven, pa se preporučuje konzultacija s ljekarom ili nutricionistom
+        kako bi se prilagodila ishrana osobnim potrebama i zdravstvenom stanju. Ove opće smjernice mogu pomoći
+        u promicanju zdrave ishrane i podršci općem zdravlju dojki</p>
     </div>
   </div>
 
