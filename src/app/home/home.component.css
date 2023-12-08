@@ -121,8 +121,8 @@ footer {
   padding: 10px;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
-  /* Add responsive styles if needed */
+@media screen and (max-width: 720px) {
+  /* Responsive styles for screens with a maximum width of 600px */
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -130,5 +130,12 @@ footer {
 
   header img {
     margin-bottom: 10px;
+  }
+
+  .app-description {
+    display: none; /* Hide the entire description section in mobile view */
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

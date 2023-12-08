@@ -31,7 +31,41 @@ header img {
   border-radius: 5px;
   cursor: pointer;
 }
+.title-section {
+  text-align: center;
+  margin-bottom: 30px;
+  background-image: url('/assets/Picture3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: rgba(255, 119, 149, 0.32);
+  width: 100%;
+  height: 300px;
 
+}
+
+.title-section h1 {
+  font-size: 40px;
+  color: #FF7795;
+}
+
+.title-section p {
+  font-size: 16px;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.klinike-btn {
+  background-color: #ff7795;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
 .center-container {
   display: flex;
   flex-direction: column;
@@ -39,10 +73,8 @@ header img {
   width: 100%;
   background: white;
   margin: 50px auto;
-  padding: 20px;
 }
 
-.video-grid,
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -53,27 +85,18 @@ header img {
   background: white;
 }
 
-.video-container,
 .experience-bubble {
   box-sizing: border-box;
   padding: 20px;
   margin: 30px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
+  background-color: rgba(255, 119, 149, 0.32);
+  border-radius: 20px;
   height: 300px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.video-container:hover,
-.experience-bubble:hover {
-  background-color: #ddd;
-}
 
-.video-container h2,
-.experience-bubble h3 {
-  margin-bottom: 10px;
-}
 
 footer {
   background-color: #fcfafa;
@@ -82,4 +105,28 @@ footer {
   text-align: center;
 }
 
-/* Add more styles as needed */
+@media screen and (max-width: 767px) {
+  .title-section {
+    height: 150px;
+    width: 100%;
+    text-align: right/* Adjusted height for smaller screens */
+  }
+
+  .title-section h1 {
+    font-size: 24px;
+    margin-right: 20px;/* Adjusted font size for smaller screens */
+  }
+
+  .title-section p {
+    display: none; /* Hide the description paragraph for smaller screens */
+  }
+
+  .klinike-btn {
+    display: none; /* Hide the "klinike" button for smaller screens */
+  }
+
+  .experience-grid {
+    width: 100%; /* Full width for smaller screens */
+    grid-template-columns: repeat(1, 1fr); /* One column per row for smaller screens */
+  }
+}

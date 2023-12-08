@@ -119,3 +119,29 @@ footer {
 }
 
 /* Add more styles as needed */
+@media only screen and (max-width: 720px) {
+  /* Responsive styles for screens with a maximum width of 600px */
+  .title-section {
+    text-align: right;
+    padding: 20px;
+    justify-content: right;
+  }
+
+  h1 {
+    font-size: 28px; /* Adjust font size for better visibility */
+    max-width: 40%; /* Limit the width of the title */
+    margin-bottom: 10px; /* Add spacing between lines */
+  }
+  .tips-grid {
+    grid-template-columns: repeat(1, 1fr); /* Show one tip per row in mobile view */
+  }
+
+  .tip-container {
+    height: auto; /* Adjust the height to auto for responsiveness */
+  }
+
+  .tip-container p {
+    max-height: 100px; /* Limit the height of the paragraph content */
+    overflow: hidden;
+  }
+}

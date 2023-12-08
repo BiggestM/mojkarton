@@ -96,3 +96,43 @@ footer {
 
 /* Add more styles as needed */
 
+@media only screen and (max-width: 720px) {
+  /* Responsive styles for screens with a maximum width of 600px */
+  .main-section {
+    background-image: none; /* Remove the background image */
+  }
+  .title-section {
+    height: auto; /* Auto height for responsiveness */
+    padding: 10px; /* Adjust padding for better spacing */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .title-section a {
+    font-size: 30px; /* Adjust the font size of clickable anchors */
+    margin: 10px 0; /* Add vertical margin between anchors */
+  }
+
+  .title-section span {
+    font-size: 30px; /* Adjust the font size of the span */
+    margin: 10px 0; /* Add vertical margin for spacing */
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%; /* Adjust width for better responsiveness */
+    height: auto; /* Auto height for responsiveness */
+    background-size: cover;
+  }
+
+  .top-part {
+    padding-top: 20px; /* Adjust top padding for better spacing */
+  }
+
+  header img {
+    height: 60px; /* Adjust the logo size for better visibility */
+  }
+  .title-section a.link2{
+    font-size: 50px;
+  }
+}

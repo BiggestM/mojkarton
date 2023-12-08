@@ -129,3 +129,45 @@ footer {
 }
 
 /* Add more styles as needed */
+@media only screen and (max-width: 720px) {
+  /* Responsive styles for screens with a maximum width of 600px */
+  .main-section {
+    background-image: none; /* Remove the background image */
+  }
+  .title-section {
+    height: auto; /* Auto height for responsiveness */
+    padding: 10px; /* Adjust padding for better spacing */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .title-section a {
+    font-size: 30px; /* Adjust the font size of clickable anchors */
+    margin: 10px 0; /* Add vertical margin between anchors */
+  }
+
+  .title-section span {
+    font-size: 30px; /* Adjust the font size of the span */
+    margin: 10px 0; /* Add vertical margin for spacing */
+  }
+
+  .container {
+    width: 90%; /* Adjust width for better responsiveness */
+  }
+
+  .search-bar {
+    width: 50%; /* Full width for responsiveness */
+    max-width: none; /* Remove max-width constraint */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for responsiveness */
+  }
+
+  .grid-item {
+    width: 50%; /* Full width for responsiveness */
+  }
+
+  .title-section a.link1 {
+    font-size: 50px; /* Adjust font size for this specific anchor */
+  }
+}
