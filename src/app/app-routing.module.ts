@@ -6,6 +6,7 @@ import {SignupComponent} from "./signup/signup.component";
 import {SupportComponent} from "./support/support.component";
 import {TaketestComponent} from "./taketest/taketest.component";
 import {TipsComponent} from "./tips/tips.component";
+import {SelfassessmentComponent} from "./selfassessment/selfassessment.component";
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'tips',
     component: TipsComponent,
+  },
+  {
+    path: 'self',
+    component: SelfassessmentComponent,
   }
 ];
 

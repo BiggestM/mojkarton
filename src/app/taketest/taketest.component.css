@@ -27,85 +27,99 @@ header img {
   border-radius: 5px;
 }
 
-.center-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  background: white;
-  margin: 50px auto;
+.main-section {
+  background-image: url('/assets/Picture1.png'); /* Replace with your image path */
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-.search-add-container {
+.title-section {
+  background-color: rgba(255, 119, 149, 0.32);
+  text-align: center;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.title-section a {
+  color: #FF7795;
+  text-decoration: none;
+  font-size: 50px;
+  margin: 0 10px;
+  font-family: "Lemon", sans-serif;
+}
+.title-section span {
+  font-size: 50px; /* Same as the anchor text size */
+  margin: 0 10px;
+  color: #ff7795;
+}
+.title-section a.link1{
+  font-size: 80px;
+}
+
+.white-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
   display: flex;
   flex-direction: column;
+  background: #FF7795;
+  width: 50%;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.top-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 50%; /* Take up half of the screen */
-  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 50px;
 }
 
 .search-bar {
-  margin-top: 20px;
-  text-align: center;
-}
-.search-bar input {
-  width: 500px;
+  width: 70%;
+  max-width: 500px;
+  margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-.add-button {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.symptoms-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.symptom-container {
-  display: flex;
-  justify-content: space-between;
-  width: 600px; /* Adjust the width of the symptom container */
-  height: 500px; /* Adjust the height of the symptom container */
-  background-color: #f4f4f4; /* Light gray background */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.bubble {
-  background-color: lightgray;
-  padding: 10px;
-  border-radius: 20px;
-  margin-right: 20px; /* Adjust spacing between symptoms on the x-axis */
-  margin-bottom: 20px; /* Adjust spacing between symptoms on the y-axis */
+.add-btn {
+  background-color: white;
+  color: #FF7795;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 15px;
   cursor: pointer;
+  font-family: Inter, sans-serif;
 }
 
-.bubble-title {
-  display: block;
-  margin-bottom: 5px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+  gap: 20px;
+  justify-content: center;
 }
 
-.checkmark {
-  color: green;
-  font-size: 1.2em;
-  margin-left: 5px;
-}
-
-.selected {
-  background-color: green;
-}
-
-.male-symptoms .bubble {
-  background-color: #4285f4; /* Arden Blue */
-}
-
-.female-symptoms .bubble {
-  background-color: #ff69b4; /* Hot Pink */
+.grid-item {
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  border-radius: 15px;
+  color: #FF7795;
+  width: 60%;
+  font-family: Inter, sans-serif;
+  margin: 0 auto;
 }
 footer {
   background-color: #fcfafa;
