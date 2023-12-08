@@ -109,12 +109,14 @@ footer {
   .title-section {
     height: 150px;
     width: 100%;
-    text-align: right/* Adjusted height for smaller screens */
+    text-align: right;
+    justify-content: right;/* Adjusted height for smaller screens */
   }
 
   .title-section h1 {
     font-size: 24px;
-    margin-right: 20px;/* Adjusted font size for smaller screens */
+    margin-right: 20px;
+    max-width: 80%;/* Adjusted font size for smaller screens */
   }
 
   .title-section p {
@@ -128,5 +130,9 @@ footer {
   .experience-grid {
     width: 100%; /* Full width for smaller screens */
     grid-template-columns: repeat(1, 1fr); /* One column per row for smaller screens */
+  }
+  .experience-bubble {
+    height: auto;
+    overflow: hidden;
   }
 }
